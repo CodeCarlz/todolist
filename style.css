@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  background: linear-gradient(rgb(190, 127, 108), rgb(135, 92, 92));
+}
+
+.main{
+  height: 40%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+#header{
+  text-align: center;
+}
+
+.middle-Container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#todoInput{
+  flex: 1;
+ 
+  height: 30px;
+}
+
+#todo-Container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 85vh;
+  overflow: scroll;
+}
+
+#todo-Container::-webkit-scrollbar{
+  display: none;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
